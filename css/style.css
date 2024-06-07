@@ -1,19 +1,55 @@
+
+
 div > h3:first-child{
     color: pink;
 }
 
-#greycol {
+#greycol:hover {
     color: gray;
 }
 
-div > div p {
+div > div p:hover {
     color: red
 }
 
-h3 + p {
+h3 + p::first-line{
     color: green;
 }
 
-.yellow {
+.yellow:last-of-type{
     color: yellow;
 }
+
+caption + thead::selection {
+    background-color: lightgray;
+}
+
+table:hover{
+    font-family: sans-serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #ece9e0;
+    color: #656665;
+    border: 16px solid #ece9e0;
+    border-radius: 45px;
+}
+
+th {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 45px;
+}
+
+td {
+    background: #f5d7bf;
+    padding: 10px;
+    border-radius: 45px;
+}
+
+tr > td:first-child {
+    background: lightgray;
+}
+
+
+    
